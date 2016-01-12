@@ -1,0 +1,29 @@
+// Mange source order, from low to high specificity and far-reaching to very localised
+// Documentation: https://speakerdeck.com/dafed/managing-css-projects-with-itcss
+
+@import
+
+// Settings
+	  "base/config"
+    , "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables"
+
+// Tools
+	, "helper/mixin"
+	, "helper/function"
+    , "helper/helper"           // classes prefix: h-
+	, "helper/placeholder"
+
+// Base
+    , "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize"
+	, "base/base"				// Unclassed HTML elements (type selectors)
+
+// Component (A > Z)
+	, "component/button"
+
+// Master layout
+//	, "layout/header"			// master/base template, prefixing with l-
+
+// Page layout
+//	, "layout/pages/index"		// page specifik, prefixing with p-{page-name}-*
+
+;

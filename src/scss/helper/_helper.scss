@@ -1,0 +1,88 @@
+// ===================================
+// -- Margin & padding
+// ===================================
+
+$distanceSelector: 'margin-top', 'margin-bottom', 'padding-top', 'padding-bottom';
+
+$distanceVariant: (
+      none:     0
+    , tiny:     map_get( $mapSpacing, tiny )
+    , small:    map_get( $mapSpacing, small )
+    , base:     map_get( $mapSpacing, base )
+    , medium:   map_get( $mapSpacing, medium )
+    , large:    map_get( $mapSpacing, large )
+);
+
+@each $selector in $distanceSelector {
+    @each $variant, $value in $distanceVariant {
+        .h-#{$selector}-#{$variant} {
+            #{$selector}: #{$value};
+        }
+    }
+}
+
+
+
+// ===================================
+// -- Text size
+// ===================================
+
+@each $size in $mapFontSize {
+    .h-fs-#{ nth( $size, 1 ) } {
+        font-size: nth( $size, 2 );
+
+        &:hover { font-size: nth( $size, 2 ); }
+    }
+}
+
+
+
+// ===================================
+// -- Text align
+// ===================================
+
+.h- {
+    &text-left { text-align: left; }
+
+    &text-center { text-align: center; }
+
+    &text-right { text-align: right; }
+}
+
+
+
+// ===================================
+// -- Font weight
+// ===================================
+
+@each $weight in $mapFontWeight {
+    .h-fw-#{ nth( $weight, 1 ) } { font-weight: nth( $weight, 2 ); }
+}
+
+
+
+// ===================================
+// -- Text color
+// ===================================
+
+@each $color in $mapColorEmotional {
+    .h-tc-#{ nth( $color, 1 ) } {
+        color: nth( $color, 2 );
+
+        &:hover { color: nth( $color, 2 ); }
+    }
+}
+
+
+
+// ===================================
+// -- Mobile helpers
+// ===================================
+
+// @media( max-width: $screen-xs-max ) {
+//  // Prefix classes with .h-xs-
+
+//  .h-xs-text-center { text-align: center; }
+
+//  .h-xs-block { display: block; }
+// }

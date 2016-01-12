@@ -1,0 +1,9 @@
+.db
+.buildpath
+.project
+.settings/
+/craft/config/license.key
+/uploads/
+/node_modules/
+/bower_components/
+/vendor/
