@@ -1,0 +1,19 @@
+{
+  "name": "itmundi-frontend",
+  "version": "0.0.0",
+  "authors": [
+    "Michiel Bruggenwirth <michiel@michielbruggenwirth.nl>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "~3.3.4",
+    "jquery-validation": "~1.14.0"
+  }
+}

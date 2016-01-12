@@ -1,0 +1,126 @@
+$mapColorPalette: (
+      black: ( base: #000 )
+    , white: ( base: #FFF )
+    , gray: (
+          base:           #828282   // 49% ligther than black
+        , light:          #a3a3a3   // 36% ''
+        , lighter:        #c4c4c4   // 23% ''
+        , lightest:       #e5e5e5   // 10% ''
+        , dark:           #5e5e5e   // 63% ''
+        , darker:         #3d3d3d   // 76% ''
+        , darkest:        #191919   // 90% ''
+    )
+    , red: (
+          base:           #ff0000
+        , light:          #ff5353
+        , dark:           #bf1313
+    )
+);
+
+$mapColorEmotional: (
+      light:              lightgrey
+    , stable:             gray
+    , positive:           blue
+    , calm:               turquoise
+    , balanced:           green
+    , energized:          orange
+    , assertive:          red
+    , royal:              purple
+    , dark:               darkgray
+);
+
+$mapColorSocial: (
+      twitter:            #00ACED
+    , facebook:           #3B5998
+    , whatsapp:           #4dc247
+);
+
+
+
+// Font size:
+
+$mapFontSize: (
+      tiny:               11px
+    , small:              13px
+    , base:               16px
+    , medium:             20px
+    , large:              24px
+    , xlarge:             32px
+    , xxlarge:            40px
+    , huge:               48px
+);
+
+
+
+// Font weight
+
+$mapFontWeight: (
+      lightest:           100
+    , lighter:            200
+    , light:              300
+    , normal:             400
+    , bold:               500
+    , bolder:             700
+    , boldest:            900
+);
+
+
+
+// Typography
+
+$font-family:           Arial;
+$font-color:            palColor( red );
+$line-height:           1.5;
+
+$link-color:            palColor( red );
+$link-hover-color:      palColor( red, dark );
+$link-hover-decoration: underline;
+
+$paragraph-whitespace:  $line-height + em;
+
+
+
+// Heading size
+
+$mapHeadingSize: (
+      h1:               fontSize( xxlarge )
+    , h2:               fontSize( xlarge )
+    , h3:               fontSize( large )
+    , h4:               fontSize( medium )
+    , h5:               fontSize( base )
+);
+
+$heading-color:         palColor( red );
+$heading-weight:        fontWeight( bold );
+
+
+
+// Spacing
+
+$mapSpacing: (
+      tiny:             10px
+    , small:            20px
+    , base:             30px
+    , medium:           40px
+    , large:            50px
+);
+
+
+// States
+// TODO: RBH - Merge met de emotionele kleuren?
+
+$hex-state-success:     emoColor( balanced );
+$hex-state-info:        emoColor( calm );
+$hex-state-warning:     emoColor( energized );
+$hex-state-danger:      emoColor( assertive );
+
+
+
+// Application
+
+$hex-body-bg:               palColor( red, dark );
+$content-spacing:           15px;
+$border-radius:             3px;
+$transition-duration-slow:  .15s;
+$transition-duration:       .3s;
+$transition-duration-fast:  .5s;
