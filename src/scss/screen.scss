@@ -4,21 +4,21 @@
 @import
 
 // Settings
-	  "base/config"
-    , "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables"
+	 "helper/function"
+	, "base/config"
+    // , "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables"
 
 // Tools
 	, "helper/mixin"
-	, "helper/function"
     , "helper/helper"           // classes prefix: h-
 	, "helper/placeholder"
 
 // Base
-    , "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize"
+    // , "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize"
 	, "base/base"				// Unclassed HTML elements (type selectors)
 
 // Component (A > Z)
-	, "component/button"
+	, "component/glitch"
 
 // Master layout
 //	, "layout/header"			// master/base template, prefixing with l-

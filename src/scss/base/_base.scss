@@ -1,37 +1,9 @@
+$blue: #1e2a31;
 body {
-    background-color: $hex-body-bg;
-    font-size: $font-size-base;
-    font-family: $font-family;
-    line-height: $line-height;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background-color: $blue;
+  color: white;
+  font-family: 'Avenir Next', sans-serif;
 }
-
-@include heading {
-    margin: 0 0 .5em;
-    color: $heading-color;
-    font-weight: $heading-weight;
-}
-
-::selection {
-    background-color: emoColor( energized );
-    color: palColor( white );
-}
-
-h1 { font-size: headingSize( h1 ); }
-
-h2 { font-size: headingSize( h2 ); }
-
-h3 { font-size: headingSize( h3 ); }
-
-h4 { font-size: headingSize( h4 ); }
-
-h5 { font-size: headingSize( h5 ); }
-
-p { margin: 0 0 $paragraph-whitespace; }
-
-a {
-    color: $link-color;
-
-    &:hover { color: $link-hover-color; }
-}
-
-hr {  }
